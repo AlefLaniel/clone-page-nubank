@@ -667,7 +667,7 @@ hr{
 @media (max-width: 425px) {
     
     .container{
-        padding: 0 20px;
+        padding: 0 25px;
     }
 
     .items-menu ul li{
@@ -728,7 +728,7 @@ hr{
     }
 
     .section-5, .section-6, .section-7 {
-        padding: 100px 10px;
+        padding: 100px 22px;
         justify-content: flex-start;
     }
 
@@ -736,6 +736,10 @@ hr{
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    footer{
+        padding: 70px 30px;
     }
 
     .footer-information{
