@@ -254,7 +254,7 @@ header{
     flex-direction: column;
     justify-content: center;
     background-color: var(--color-primary);
-    background-image: url('../images/background-1.jpg');
+    background-image: url('../images/background-7.webp');
     background-size: cover;
     background-position: bottom;
     overflow: hidden;
@@ -289,7 +289,7 @@ header{
     flex-direction: column;
     justify-content: center;
     background-color: var(--color-primary);
-    background-image: url('../images/background-4.jpg');
+    background-image: url('../images/background-8.webp');
     background-size: cover;
     background-position: top;
     overflow: hidden;
