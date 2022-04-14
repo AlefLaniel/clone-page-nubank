@@ -50,20 +50,13 @@ header{
     transition: 0.5s ease-in;
 }
 
-.li-active{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    cursor: pointer;
-}
-
 .line{
-    margin-top: 3px;
+    margin-top: 5px;
     width: 5px;
     height: 5px;
     border-radius: 50%;
     background-color: var(--color-primary);
+    margin-left: 3.5vw;
 }
 
 .line-li{
@@ -477,6 +470,10 @@ hr{
         margin-left: 5px;
     }
 
+    .line{
+        margin-left: 4.8vw;
+    }
+
     .button-register{
         padding: 5px 10px;
         font-size: 14px;
@@ -544,6 +541,10 @@ hr{
     .items-menu ul .login-mobile{
         display: flex;
         justify-content: flex-start;
+    }
+
+    .line{
+        margin-left: 25vw;
     }
 
     header{
@@ -692,6 +693,10 @@ hr{
         padding: 30px 0px;
     }
 
+    .line{
+        margin-left: 23vw;
+    }
+
     .button-register{
         z-index: 99;
         top: 92vh;
@@ -728,7 +733,7 @@ hr{
 
     .section-1--form{
         margin-top: 50px;
-        margin-right: -15px;
+        margin-right: -8px;
         align-self: center;
     }
 
@@ -800,6 +805,11 @@ hr{
 }
 
 @media (max-width: 375px) {
+
+    .line{
+        margin-left: 25vw;
+    }
+
     .section-1--title{
         font-size: 28px;
         font-weight: normal;
