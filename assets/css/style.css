@@ -723,6 +723,10 @@ hr{
         padding: 45px;
     }
 
+    .section-2{
+        height: 110vh;
+    }
+
     .section-3--image {
         margin-right: 0;
     }
