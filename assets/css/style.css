@@ -719,16 +719,23 @@ hr{
     .section-3,
     .section-4{
         flex-direction: column;
-        height: 100vh;
-        padding: 45px;
+        padding: 70px 40px;
     }
 
     .section-2{
-        height: 110vh;
+        height: 100vh;
+    }
+
+    .section-3{
+        height: 90vh;
     }
 
     .section-3--image {
         margin-right: 0;
+    }
+
+    .section-4{
+        height: 120vh;
     }
 
     .section-5, .section-6, .section-7 {
@@ -771,7 +778,7 @@ hr{
         justify-content: flex-start;
         align-items: flex-star;
         padding: 40px 0px;
-        margin-left: -20px;
+        margin-left: 0px;
     }
 }
 
