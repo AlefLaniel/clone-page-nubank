@@ -90,14 +90,13 @@ header{
 }
 
 .buttons-header .button-login{
-    position: relative;
     color: var(--color-primary);
     display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
     font-weight: 500;
     margin-right: 20px;
 }
+
 
 .buttons-header .button-login svg{
     height: 20px;
@@ -113,6 +112,21 @@ header{
     color: white;
     font-weight: 500;
     transition: all ease .5s;
+}
+
+.button-login::before{
+    content: '';
+    position:absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-primary);
+    transition: width .3s ease-in-out;
+}
+
+.button-login:hover::before{
+    width: 100%;
 }
 
 .section-1{
@@ -209,18 +223,51 @@ header{
     margin-bottom: 25px;
 }
 
-.button-info{
+.button-info-1,
+.button-info-2,
+.button-info-3{
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    position: relative;
     font-size: 20px;
     font-weight: 700;
     color: var(--color-primary);
     line-height: 20px;
 }
 
-.button-info svg{
+.button-info-1 svg,
+.button-info-2 svg,
+.button-info-3 svg{
     height: 15px;
     fill: var(--color-primary);
 }
+
+.button-info-1::before,
+.button-info-2::before,
+.button-info-3::before{
+    content: '';
+    position:absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-primary);
+    transition: width .3s ease-in-out;
+}
+
+.button-info-1:hover::before{
+    width: 19%;
+}
+
+.button-info-2:hover::before{
+    width: 22%;
+}
+
+.button-info-3:hover::before{
+    width: 53%;
+}
+
 
 .section-2--image{
     margin-right: 12vw;
@@ -278,8 +325,12 @@ header{
     color: #FFFFFF;
 }
 
-
-.button-info-white{
+.button-info-white-1,
+.button-info-white-2,
+.button-info-white-3{
+    display: flex;
+    align-items: center;
+    position: relative;
     text-decoration: none;
     font-size: 20px;
     font-weight: 700;
@@ -287,9 +338,37 @@ header{
     line-height: 20px;
 }
 
-.button-info-white svg{
+.button-info-white-1 svg,
+.button-info-white-2 svg,
+.button-info-white-3 svg{
     height: 15px;
     fill: #fff;
+    margin-left: 5px;
+}
+
+.button-info-white-1::before,
+.button-info-white-2::before,
+.button-info-white-3::before{
+    content: '';
+    position:absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FFFF;
+    transition: width .3s ease-in-out;
+}
+
+.button-info-white-1:hover::before{
+    width: 34%;
+}
+
+.button-info-white-2:hover::before{
+    width: 10.5%;
+}
+
+.button-info-white-3:hover::before{
+    width: 12.5%;
 }
 
 .section-6{
@@ -474,10 +553,31 @@ hr{
         margin-left: 4.8vw;
     }
 
+    .button-info-1:hover::before,
+    .button-info-2:hover::before{
+        width: 30%;
+    }
+
+    .button-info-3:hover::before{
+        width: 79%;
+    }
+
     .button-register{
         padding: 5px 10px;
         font-size: 14px;
         text-align: center;
+    }
+
+    .button-info-white-1:hover::before{
+        width: 50%;
+    }
+
+    .button-info-white-2:hover::before{
+        width: 16%;
+    }
+
+    .button-info-white-3:hover::before{
+        width: 18.5%;
     }
 
     .section-1--title,
@@ -487,7 +587,7 @@ hr{
     .section-5--title,
     .section-6--title,
     .section-7--title{
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 
