@@ -38,8 +38,14 @@ function abriMenu(){
     if(document.querySelector(".items-menu ul").style.display == 'flex'){
         document.querySelector(".items-menu ul").style.display = 'none';
         document.querySelector('body').style.overflow = 'scroll';
+        document.querySelectorAll('.line-footer').forEach(item => {
+            item.style.zIndex = '2'
+         });
     }else{
         document.querySelector(".items-menu ul").style.display = 'flex'; 
         document.querySelector('body').style.overflow = 'hidden';
+        document.querySelectorAll('.line-footer').forEach(item => {
+            item.style.zIndex = '-1'
+         });
     }
 }
